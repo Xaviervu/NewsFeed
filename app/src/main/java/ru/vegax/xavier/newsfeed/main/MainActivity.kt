@@ -49,9 +49,7 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
         recyclerVUsers.adapter = newsAdapter
         recyclerVUsers.addItemDecoration(VerticalSpaceItemDecoration(40))
         recyclerVUsers.setHasFixedSize(true)
-//        if (viewModel.allNews.value.isNullOrEmpty()) {
-//            onRefresh()
-//        }
+
     }
 
     inner class VerticalSpaceItemDecoration internal constructor(private val verticalSpaceHeight: Int) :
