@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Новостная лента</string>
+    <string name="body">"body"</string>
+    <string name="header">header</string>
+    <string name="notify">уведомление</string>
+    <string name="refreshError">не возможно обновить ленту</string>
+    <string name="notification_channel_name">новостная лента</string>
+    <string name="notification_channel_description">уведомление от новостной ленты</string>
+    <string name="newsImage">news Image</string>
+</resources>

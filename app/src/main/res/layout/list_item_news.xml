@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:padding="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center|center_vertical"
+                android:paddingStart="8dp"
+                tools:ignore="RtlSymmetry">
+            <ImageView
+                    android:id="@+id/imgVPicture"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="@string/newsImage"/>
+            <CheckBox
+                    android:text="@string/notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBoxNotify"
+                    android:textAlignment="viewStart"
+                    android:paddingStart="10dp"
+
+                    tools:ignore="RtlSymmetry"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+            <TextView
+                    android:id="@+id/txtVHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/header"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                    android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                    android:textAlignment="center"
+            />
+            <TextView
+                    android:id="@+id/txtVContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/body"
+                    android:textAlignment="viewStart"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
