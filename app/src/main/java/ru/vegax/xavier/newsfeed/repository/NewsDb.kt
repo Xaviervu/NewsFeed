@@ -1,6 +1,5 @@
 package ru.vegax.xavier.newsfeed.repository
 
-
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
@@ -20,7 +19,6 @@ abstract class NewsDb : RoomDatabase() {
                         NewsDb::class.java, "news_database"
                     )
                         .fallbackToDestructiveMigration()
-
                         .build()
                 }
             }
